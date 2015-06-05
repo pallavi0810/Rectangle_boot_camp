@@ -2,15 +2,34 @@ require 'spec_helper'
 
 describe Length do
 
-	context "conversion in mm" do
-   it "with length 1m" do
-     length_1 = Length.new({m: 1, cm: 0, mm: 0})
-     expect(length_1.converted_dimension_in_mm).to eq(1000)
-   end
+	context "conversion to mm" do
+    it "with length 1 m " do
+      length_1 = Length.new(10,'m')
+      length_2 = Length.new(10000, 'mm')
+      expect(length_1).to eq(length_2)
+    end
+    it "with length 1 cm" do
+      length_1 = Length.new(100,'cm')
+      length_2 = Length.new(1,'m')
+      expect(length_1).to eq(length_2)
+    end
+  end
 
-    it "with length 1cm" do
-      length_1 = Length.new({m: 10, cm: 1, mm: 0})
-      expect(length_1.converted_dimension_in_mm).to eq(10010)
+  context "addition" do
+    it "should return 3 mm for length1 = 1mm and length2 = 2mm" do
+      length_1 = Length.new(1,'mm')
+      length_2 = Length.new(2, 'mm')
+      length_3 = Length.new(3, 'mm')
+      expect(length_1 + length_2).to eq(length_3)
+    end
+  end
+
+  context "multiplication with a constant" do
+    it "should return 3 mm for length = 1mm constant 3" do
+      length_1 = Length.new(1,'mm')
+      number = 3
+      length_2 = Length.new(3, 'mm')
+      expect(length_1 * number).to eq(length_2)
     end
   end
 end

@@ -1,12 +1,13 @@
 class Rectangle 
 	#Job: Defines a 2D rectangle with its dimensions in various metric systems
-	def initialize(side_a, side_b)
-		@length = side_a.converted_dimension_in_mm
-		@breadth = side_b.converted_dimension_in_mm
+  MM = 'mm'
+	def initialize(length, breadth)
+		@length = length
+		@breadth = breadth
 	end
 
 	def perimeter
-		((2 * (@length + @breadth))/1000.00).to_s + " m"
+    (@length + @breadth) * 2
 	end
 
 end
