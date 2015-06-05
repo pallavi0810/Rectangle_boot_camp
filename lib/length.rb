@@ -1,4 +1,5 @@
 class Length
+  #Job: represents a single dimensional measurement in mm
 	attr_reader :length_in_mm, :unit 
   MM = 'mm'
 	def initialize (length_value, unit)

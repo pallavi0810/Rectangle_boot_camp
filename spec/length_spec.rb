@@ -3,12 +3,12 @@ require 'spec_helper'
 describe Length do
 
 	context "conversion to mm" do
-    it "with length 1 m " do
+    it "length = 10 m should be equal to 10000 mm" do
       length_1 = Length.new(10,'m')
       length_2 = Length.new(10000, 'mm')
       expect(length_1).to eq(length_2)
     end
-    it "with length 1 cm" do
+    it "length = 100 cm should be equal to 1 m" do
       length_1 = Length.new(100,'cm')
       length_2 = Length.new(1,'m')
       expect(length_1).to eq(length_2)
