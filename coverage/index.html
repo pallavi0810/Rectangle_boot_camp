@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-04T18:27:07+05:30">2015-06-04T18:27:07+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-05T10:42:02+05:30">2015-06-05T10:42:02+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.62
+         1.36
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>2</b> files in total.
-    <b>10</b> relevant lines. 
-    <span class="green"><b>10</b> lines covered</span> and
+    <b>3</b> files in total.
+    <b>23</b> relevant lines. 
+    <span class="green"><b>23</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -51,23 +51,33 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#519c1167f20ecd11f25ca75246ccf5eaae8474d7" class="src_link" title="lib/length.rb">lib/length.rb</a></td>
+        <td class="strong"><a href="#9e20928f3526add7cefc33c3d54f4a323ff4464a" class="src_link" title="lib/length.rb">lib/length.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>8</td>
         <td>4</td>
         <td>4</td>
         <td>0</td>
-        <td>1.8</td>
+        <td>2.3</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#94dc76d20b330035df4ece76520d98cb4bc77b77" class="src_link" title="lib/rectangle.rb">lib/rectangle.rb</a></td>
+        <td class="strong"><a href="#c2924a0ceed09ec583ce1481385318deccb0cfe9" class="src_link" title="lib/rectangle.rb">lib/rectangle.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>12</td>
         <td>6</td>
         <td>6</td>
         <td>0</td>
         <td>1.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#3ce5db95a16d980b159ecfc6acbcab595c66f23f" class="src_link" title="spec/rectangle_spec.rb">spec/rectangle_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>23</td>
+        <td>13</td>
+        <td>13</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
     </tbody>
@@ -86,7 +96,7 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="519c1167f20ecd11f25ca75246ccf5eaae8474d7">
+        <div class="source_table" id="9e20928f3526add7cefc33c3d54f4a323ff4464a">
   <div class="header">
     <h3>lib/length.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -124,8 +134,8 @@
           <code class="ruby">	def initialize (side)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="5">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="5">
+          <span class="hits">6</span>
           
           <code class="ruby">		@converted_dimension_in_mm = side[:m] * 1000 + side[:cm] * 10 + side[:mm]</code>
         </li>
@@ -152,7 +162,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="94dc76d20b330035df4ece76520d98cb4bc77b77">
+        <div class="source_table" id="c2924a0ceed09ec583ce1481385318deccb0cfe9">
   <div class="header">
     <h3>lib/rectangle.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -217,7 +227,7 @@
         <li class="covered" data-hits="2" data-linenumber="9">
           <span class="hits">2</span>
           
-          <code class="ruby">		(2 * (@length + @breadth))/1000.00</code>
+          <code class="ruby">		((2 * (@length + @breadth))/1000.00).to_s + &quot; m&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -233,6 +243,162 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="3ce5db95a16d980b159ecfc6acbcab595c66f23f">
+  <div class="header">
+    <h3>spec/rectangle_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>13</b> relevant lines. 
+      <span class="green"><b>13</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;spec_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Rectangle do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	context &quot;Perimeter&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		it &quot;with length 1m and breadth 2.5m should be 7m&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">			dimension_1 = Length.new({m: 1, cm: 0, mm: 0})</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">			dimension_2 = Length.new({m: 2.5, cm: 0, mm: 0})</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">			rectangle = Rectangle.new(dimension_1, dimension_2)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">			expect(rectangle.perimeter).to eq(&quot;7.0 m&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">		end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		it &quot;with length 1m and breadth 2.5m should be 700mm&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">			dimension_1 = Length.new({m: 1, cm: 0, mm: 0})</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">			dimension_2 = Length.new({m: 0, cm: 0, mm: 700})</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">			rectangle = Rectangle.new(dimension_1, dimension_2)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">			expect(rectangle.perimeter).to eq(&quot;3.4 m&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">		end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">		</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">end</code>

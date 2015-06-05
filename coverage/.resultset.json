@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/vachanda/Rectangle_boot_camp/lib/rectangle.rb": [
+      "/Users/pallavideshmukh/rubyclass/Rectangle_boot_camp/lib/rectangle.rb": [
         1,
         null,
         1,
@@ -15,17 +15,42 @@
         null,
         null
       ],
-      "/Users/vachanda/Rectangle_boot_camp/lib/length.rb": [
+      "/Users/pallavideshmukh/rubyclass/Rectangle_boot_camp/lib/length.rb": [
         1,
         1,
         null,
         1,
-        4,
+        6,
+        null,
+        null,
+        null
+      ],
+      "/Users/pallavideshmukh/rubyclass/Rectangle_boot_camp/spec/rectangle_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1433422627
+    "timestamp": 1433481122
   }
 }

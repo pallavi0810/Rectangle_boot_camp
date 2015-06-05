@@ -6,7 +6,7 @@ class Rectangle
 	end
 
 	def perimeter
-		(2 * (@length + @breadth))/1000.00
+		((2 * (@length + @breadth))/1000.00).to_s + " m"
 	end
 
 end
